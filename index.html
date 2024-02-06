@@ -8,78 +8,234 @@
     <link rel="stylesheet" href="app.css">
     <title>Document</title>
 </head>
-<body class="bg-green-600 flex place-content-center">
-    <div class="container min-w-full min-h-screen bg-orange-400 flex items-center justify-center">
-        <div class="navbar h-1/3 w-12 bg-blue-600 mr-6 rounded-3xl">
+<body class=" flex place-content-center">
+    <div style="background-image: url(images/livingroom.jpg); background-size: cover;" class="container min-w-full min-h-screen flex items-center justify-center text-white">
+        <div class="navbar  h-1/3 w-12 backdrop-blur bg-gray-600/30 mr-6 rounded-full border-2 border-zinc-800 flex flex-col justify-between items-center p-8">
+            <span class=" w-10 h-10 flex justify-center items-center play material-symbols-outlined bg-red-600 rounded-full">
+                play_circle
+            </span>
+            <span class="material-symbols-outlined">
+                grid_view
+            </span>
+            <span class="material-symbols-outlined">
+                music_video
+            </span>
+            <span class="material-symbols-outlined">
+                podcasts
+            </span>
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <span class="material-symbols-outlined">
+                 search
+            </span>
         </div>
-        <div class="mainpage bg-red-600 w-5/6 h-5/6 rounded-3xl flex">
-            <div class="browsebar bg-green-600 w-1/5 h-full rounded-l-3xl flex flex-col items-center mr-6">
-                <div class="browsedash h-2/5 w-4/5 bg-blue-600 flex flex-col justify-around">
-                    <div class="logo bg-orange-400 flex w-full h-2/5">
+        <div class="mainpage backdrop-blur-lg bg-gray-800/50 mr-6 rounded-3xl border-2 border-zinc-800 rounded-3xl flex border-2 border-zinc-800">
+            <div id="browsebar" class="browsebar border-r-2 border-zinc-800  backdrop-blur-lg bg-gray-700/30 w-1/5 h-full rounded-l-3xl flex flex-col items-center mr-6">
+                <div id="dash" class="browsedash h-2/5 w-4/5 flex flex-col justify-around">
+                    <div class="logo flex w-full h-2/5">
                         <img src="images/logo-netflix-nasdaq-nflx-brand-television-png-favpng-t5CTG1hJsYDzgmq2xVSa37kcv-removebg-preview.png" alt="">
                     </div>
-                    <div class="dashitems flex flex-col h-1/2 justify-around bg-red-600">
-                        <div class="ditem">Browse</div>
-                        <div class="ditem">Wishlist</div>
-                        <div class="ditem">Comming Soon</div>
+                    <div class="dashitems flex flex-col h-1/2 justify-around">
+                        <div class="ditem flex"><span class="material-symbols-outlined w-5 h-5 flex mr-2 justify-center items-center material-symbols-outlined bg-red-600 rounded-full">
+                            play_circle
+                            </span>Browse</div>
+                        <div class="ditem flex"><span class="material-symbols-outlined mr-2">
+                            favorite
+                            </span>Wishlist</div>
+                        <div class="ditem flex"> <span class="material-symbols-outlined mr-2">
+                            event_available
+                            </span>Coming Soon</div>
                     </div>
                 </div>
-                <div class="trailers h-1/2 w-4/5 bg-teal-600 mt-1">
-                    <div class="trailerhead mb-2"> New Trailers Fire</div>
-                    <div class="trailer bg-orange-400 flex h-1/3 rounded-3xl flex items-end">
-                        <div class="trailername flex justify-around w-full rounded-b-3xl bg-blue-600 h-1/3 mt-1">
-                            <span class="bg-blue-600 self-center">alkdfja</span>
-                            <span class="self-center">button</span>
+                <div class="trailers h-1/2 w-4/5 mt-1">
+                    <div class="trailerhead mb-2 text-white text-lg font-medium"> New Trailers &#128293</div>
+                    <div style="background-image: url(images/shadow\ and\ bone.jpg);  background-size: cover; background-position: 50% 12%;" 
+                    class="trailer flex h-1/3 rounded-3xl flex items-end">
+                        <div class="trailername flex justify-around w-full rounded-b-3xl backdrop-blur-lg bg-gray-800/50 h-1/4 mt-1">
+                            <span class="self-center">Shadow and Bone</span>
+                            <span class="self-center"><span class="material-symbols-outlined">
+                                play_circle
+                                </span></span>
                         </div>
                     </div>
-                    <div class="trailer bg-orange-400 flex h-1/3 rounded-3xl flex items-end my-2">
-                        <div class="trailername flex justify-around w-full rounded-b-3xl bg-blue-600 h-1/3 mt-1">
-                            <span class="bg-blue-600 self-center">alkdfja</span>
-                            <span class="self-center">button</span>
+                    <div style="background-image: url(images/the\ night\ agent.jpg);  background-size: cover; background-position: top;"  class="trailer flex h-1/3 rounded-3xl flex items-end my-2">
+                        <div class="trailername flex justify-around w-full rounded-b-3xl backdrop-blur-lg bg-gray-800/50 h-1/4 mt-1">
+                            <span class=" self-center">The Night Agent</span>
+                            <span class="self-center"><span class="material-symbols-outlined">
+                                play_circle
+                                </span></span>
                         </div>
                     </div>
-                    <div class="trailer bg-orange-400 flex h-1/3 rounded-3xl flex items-end">
-                        <div class="trailername flex justify-around w-full rounded-b-3xl bg-blue-600 h-1/3 mt-1">
-                            <span class="bg-blue-600 self-center">alkdfja</span>
-                            <span class="self-center">button</span>
+                    <div style="background-image: url(images/witcher.jpg);  background-size:cover; background-position: 50% 18% ;" 
+                    class="trailer flex h-1/3 rounded-3xl flex items-end">
+                        <div class="trailername flex justify-around w-full rounded-b-3xl backdrop-blur-lg bg-gray-800/50 h-1/4 mt-1">
+                            <span class="self-center">The Witcher</span>
+                            <span class="self-center"><span class="material-symbols-outlined">
+                                play_circle
+                                </span></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="movies bg-blue-600 w-4/5 h-full rounded-r-3xl">
-                <div class="tophalf bg-indigo-300 w-full h-3/5 rounded-r-3xl">
+            <div id="movies" class="movies opacity-100 w-4/5 h-full rounded-r-3xl pr-4">
+                <div class="tophalf w-full h-1/2 rounded-r-3xl my-8 mt-3">
                     <div class="profilebar h-50 flex align-center justify-between">
-                        <div class="search bg-green-600 self-center flex justify-between w-1/3">
-                            <div class="arrows bg-indigo-300 w-1/5">
+                        <div id="searchicon" class="hidden self-center m-3"><span class="material-symbols-outlined">
+                            search
+                            </span></div>
+                        <div class="search self-center flex justify-arround w-1/3">
+                            <div class="arrows w-1/3">
                                 <span class="arrow"><span class="material-symbols-outlined">chevron_left</span></span>
                                 <span class="arrow"><span class="material-symbols-outlined">chevron_right</span></span>
                             </div>
-                            <div class="searchbar bg-slate-600 w-3/4 rounded-3xl">
-
+                            <div class="searchbar bg-slate-600 w-3/4 rounded-3xl flex">
+                                <span class="ml-2 material-symbols-outlined self-center">
+                                    mic
+                                    </span><span class="self-center ml-2"> Search ...</span>
                             </div>
                         </div>
-                        <div class="profile bg-green-600 self-center flex justify-center w-1/3 h-10">
-                            <div class="notification self-center"><span class="bell bg-slate-600 rounded-full p-1 text-gray-400 material-symbols-outlined">
+                        <div class="profile self-center flex justify-center w-1/5 h-10">
+                            <div class="notification self-center"><span class="bell bg-gray-600/50 rounded-full p-1 text-gray-400 material-symbols-outlined">
                                 notifications
                                 </span></div>
-                            <div class="picture bg-indigo-300 w-1/2 flex align-center rounded-full justify-center ml-3">
-                                <img class="w-8 h-8 self-center bg-blue-600" src="images/icon-removebg-preview.png" alt="">
-                                <div class="username bg-green-600 self-center ml-3">
+                            <div id="picture" class="picture bg-gray-600/50 w-40 flex align-center rounded-full justify-center ml-3">
+                                <img class="w-8 h-8 self-center " src="images/icon-removebg-preview.png" alt="">
+                                <div class="username self-center ml-3">
                                     Samantha G
                                     <div class="tag">@Samantha</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider w-full  rounded-3xl">
-                        
+                    <div class="slider w-full rounded-3xl flex items-end justify-between mt-3">
+                        <div class="watch m-10 ml-20  flex">
+                            <div class="bg-red-600 shadow-lg shadow-red-500/50 w-20 h-10 rounded-xl justify-center flex items-center mr-8 text-white font-medium">Watch</div>
+                            <div class="self-center bg-slate-600 h-10 w-10 flex justify-center rounded-lg"><span class="material-symbols-outlined self-center">
+                                add
+                                </span></div>
+                        </div>
+                        <div class="slides w-2/5 flex flex-row items-center mb-8">
+                            <div class="trailer"><img class="rounded-xl h-20 w-44 hover:border-2 border-solid border-red-500" src="images/peakyblinders1.jpg" alt=""></div>
+                            <div class="trailer w-36 mx-5"><img class="rounded-xl h-20 w-44 hover:border-2 border-solid border-red-500" src="images/Peaky Blinders 2.avif" alt=""></div>
+                            <div class="trailer  mr-5"><img class="rounded-xl h-20 w-44 hover:border-2 border-solid border-red-500" src="images/peaky-blinders-3.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
                 <div class="bothalf w-full h-2/5 rounded-r-3xl">
-                    <div class="toprow">
-
+                    <div id="toprow" class="trailer flex flex-col h-52 mb-3">
+                        <div class="text-white font-medium text-xl mb-3">Popcorn Mania</div>
+                        <div class="flex  h-52 justify-between ">
+                            <div style="background-image: url(images/brooklyn99.jpg); background-size: cover; background-position: 50%;" class="trailer flex h-40 mr-2 rounded-3xl flex items-end my-2 w-1/4 text-white">
+                                <div class="trailername flex justify-between w-full rounded-b-3xl bg-gradient-to-b from-zinc-800 to-zinc-900 h-1/4 pb-2 px-5">
+                                    <div class="self-center text-lg font-medium">Brooklyn 99
+                                        <div class="flex text-xs font-light">
+                                            <div class="mr-2">2020</div>
+                                            <div class="mr-2">U/A 16+</div>
+                                            <div> 7 Seasons</div>
+                                        </div>
+                                    </div>
+                                    <div class="self-center"><span class="material-symbols-outlined">
+                                        more_vert
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/readyplayer1.jpg); background-size: cover; background-position: 50%;" class="trailer flex h-40 mr-2 rounded-3xl flex items-end my-2 w-1/4 text-white">
+                                <div class="trailername flex justify-between w-full rounded-b-3xl bg-gradient-to-b from-zinc-800 to-zinc-900 h-1/4 pb-2 px-5">
+                                    <div class="self-center text-lg font-medium">Ready Player One
+                                        <div class="flex text-xs font-light">
+                                            <div class="mr-2">2018</div>
+                                            <div class="mr-2">U/A 13+</div>
+                                            <div>2h 20m</div>
+                                        </div>
+                                    </div>
+                                    <span class="self-center"><span class="material-symbols-outlined">
+                                        more_vert
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/moneyhiest.jpg); background-size: cover; background-position: 50%;" class="trailer flex h-40 mr-2 rounded-3xl flex items-end my-2 w-1/4 text-white">
+                                <div class="trailername flex justify-between w-full rounded-b-3xl bg-gradient-to-b from-zinc-800 to-zinc-900 h-1/4 pb-2 px-5">
+                                    <div class="self-center text-lg font-medium">Money Heist
+                                        <div class="flex text-xs font-light">
+                                            <div class="mr-2">2021</div>
+                                            <div class="mr-2">A</div>
+                                            <div>2h 20m</div>
+                                        </div>
+                                    </div>
+                                    <span class="self-center"><span class="material-symbols-outlined">
+                                        more_vert
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/ash.jpg); background-size: cover; background-position: 50% 18%;" class="trailer flex h-40 mr-2 rounded-3xl flex items-end my-2 w-1/4 text-white">
+                                <div class="trailername flex justify-between w-full rounded-b-3xl bg-gradient-to-b from-zinc-800 to-zinc-900 h-1/4 pb-2 px-5">
+                                    <div class="self-center text-lg font-medium">Ash vs. Evil Dead
+                                        <div class="flex text-xs font-light">
+                                            <div class="mr-2">2018</div>
+                                            <div class="mr-2">A</div>
+                                            <div>3 Seasons</div>
+                                        </div>
+                                    </div>
+                                    <span class="self-center"><span class="material-symbols-outlined">
+                                        more_vert
+                                        </span></span>
+                                </div>
+                            </div>
+                        </div>    
                     </div>
-                    <div class="botdoor">
+                    <div id="botrow" class="trailer flex flex-col h-1/2 ">
+                        <div class="text-white font-medium text-xl"> Continue Watching</div>
+                        <div class="flex h-5/6 justify-between ">
+                            <div style="background-image: url(images/rednotice.jpg); background-size: cover; background-position: 50% 18%;" class="trailer flex flex-col justify-end h-5/6 mr-2 rounded-3xl my-2 w-1/4 text-white">
+                                <span class="play material-symbols-outlined place-self-center backdrop-blur-lg bg-gray-800/50 rounded-full mb-5">
+                                    play_arrow
+                                    </span>
+                                <div class="trailername flex justify-between w-full rounded-b-3xl h-1/3 pb-2 px-5">
+                                    <div class="self-center text-md font-medium w-full">Red Notice
+                                        <div class="bar">
+                                            <div style="height: 2px;" class="bg-white"><div style="height: 2px;" class="w-1/3 bg-red-600"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/extraction.jpg); background-size: cover; background-position: 50% 18%;" class="trailer flex flex-col justify-end h-5/6 mr-2 rounded-3xl my-2 w-1/4 text-white">
+                                <span class="play material-symbols-outlined place-self-center backdrop-blur-lg bg-gray-800/50 rounded-full mb-5">
+                                    play_arrow
+                                    </span>
+                                <div class="trailername flex justify-between w-full rounded-b-3xl h-1/3 pb-2 px-5">
+                                    <div class="self-center text-md font-medium w-full">Extraction
+                                        <div class="bar">
+                                            <div style="height: 2px;" class=" bg-white"><div style="height: 2px;" class="w-2/3 bg-red-600"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/adamproject.jpg); background-size: cover; background-position: 50% 18%;" class="trailer flex flex-col justify-end h-5/6 mr-2 rounded-3xl my-2 w-1/4 text-white">
+                                <span class="play material-symbols-outlined place-self-center backdrop-blur-lg bg-gray-800/50 rounded-full mb-5">
+                                    play_arrow
+                                    </span>
+                                <div class="trailername flex justify-between w-full rounded-b-3xl h-1/3 pb-2 px-5">
+                                    <div class="self-center text-md font-medium w-full">The Adam Project
+                                        <div class="bar">
+                                            <div style="height: 2px;" class="bg-white"><div style="height: 2px;" class="w-1/6 bg-red-600"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-image: url(images/oldguard.jpg); background-size: cover; background-position: 50% 18%;" class="trailer flex flex-col justify-end h-5/6 mr-2 rounded-3xl my-2 w-1/4 text-white">
+                                <span class="play material-symbols-outlined place-self-center backdrop-blur-lg bg-gray-800/50 rounded-full mb-5">
+                                    play_arrow
+                                    </span>
+                                <div class="trailername flex justify-between w-full rounded-b-3xl h-1/3 pb-2 px-5">
+                                    <div class="self-center text-md font-medium w-full">The Old Guard
+                                        <div class="bar">
+                                            <div style="height: 2px;" class="bg-white"><div style="height: 2px;" class="w-4/5 bg-red-600"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
 
                     </div>
                 </div>

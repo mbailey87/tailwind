@@ -594,8 +594,8 @@ video {
   border-radius: 0.125rem;
 }
 .mainpage {
-  height: 95% !important;
-  width: 90% !important;
+  height: 85% ;
+  width: 90% ;
 }
 .bell {
   font-size: x-large;
@@ -609,9 +609,46 @@ video {
 .tag {
   font-size: x-small;
 }
+.play {
+  font-size: xx-large;
+}
 .slider {
-  background-image: url(images/background.jpg) !important;
-  background-position: center;
-  background-size: cover;
+  background-image: url(images/background.jpg);
+  background-position: 50%;
+  background-size:cover;
   height: 90%;
+  width: 100%;
+} 
+@media (max-width: 90em) {
+  .navbar, #browsebar {
+    display: none;
+  }
+  .mainpage, #movies {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .slides img, div .watch {
+    display: none;
+  }
+}
+@media (max-width: 940px) {
+  .username, div .search, div .trailername {
+    display: none;
+  }
+  #searchicon {
+    display: block;
+  }
+  #picture {
+    width: 5em;
+    margin-right: 1em;
+  }
+}
+@media (max-height :780px) {
+  .trailers, #botrow {
+    display: none;
+  }
+  #dash, #toprow {
+    height: 90%;
+  }
 }
